@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jokeTeller</title>
+    <style>
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+        }
+        #joke {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Tehlka Chutkula</h1>
+    <p id="joke">Click the button to see a joke!</p>
+    <button onclick="Joke()">Get a Joke</button>
+</div>
+<script>
+    const jokes = [
+        "Why don't skeletons fight each other? They don't have the guts.",
+        "Why do programmers prefer dark mode? Because light attracts bugs!",
+        "Why did the scarecrow win an award? Because he was outstanding in his field.",
+        "What do you call a bear with no teeth? A gummy bear!",
+        "Why did the math book look sad? Because it had too many problems.",
+        "Why did the coffee file a police report? It got mugged.",
+        "Why don’t scientists trust atoms? Because they make up everything!",
+        "Why couldn’t the sesame seed leave the casino? Because it was on a roll.",
+        "What do you call cheese that isn't yours? Nacho cheese!",
+        "Why are elevator jokes so good? They work on many levels."
+    ];
+
+    function Joke() {
+        const randomIndex = Math.floor(Math.random() * jokes.length);
+        document.getElementById("joke").innerText = jokes[randomIndex];
+    }
+</script>
+
+</body>
+</html>
