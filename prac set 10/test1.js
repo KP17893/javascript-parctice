@@ -24,3 +24,4 @@ let del=function(){
     document.getElementById("note").innerHTML=localStorage.getItem("joke");
 }
 
+
