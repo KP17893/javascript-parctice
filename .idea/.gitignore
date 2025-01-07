@@ -1,7 +1,5 @@
 # Default ignored files
 /shelf/
-/package-lock.json
-/package.json
 /workspace.xml
 # Editor-based HTTP Client requests
 /httpRequests/
